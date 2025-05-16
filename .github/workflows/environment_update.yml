@@ -12,6 +12,8 @@ on:
     types: [synchronize]
     paths:
       - 'ADE.Tutorial/**'
+  
+  workflow_dispatch:
 
 concurrency: ${{ github.event.number || github.ref_name }}
 

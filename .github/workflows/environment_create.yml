@@ -9,6 +9,8 @@ on:
   pull_request:
     types: [opened, reopened]
 
+  workflow_dispatch:
+
 concurrency: ${{ github.event.number || github.ref_name }}
 
 jobs:
