@@ -8,6 +8,8 @@ on:
   pull_request:
     types: [closed]
 
+  workflow_dispatch:
+
 concurrency: ${{ github.event.number || github.ref_name }}
 
 jobs:
